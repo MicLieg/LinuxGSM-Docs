@@ -43,7 +43,7 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=3075706807
 
 ### Create a Collection
 
-Creating a collection is a great way to manage and group all the content that you want on your game server.&#x20;
+Creating a collection is a great way to manage and group all the content that you want on your game server.
 
 To create your collection go to the collections section of your games Workshop, and select `Create Collection`.
 

@@ -45,7 +45,7 @@ the log is located is called `dev-debug.log`
 
 ## query-raw
 
-* querys both `gamedig` and `query_gsquery.py`.
+* queries both `gamedig` and `query_gsquery.py`.
 
 ```bash
 ./gameserver query-raw
@@ -54,10 +54,9 @@ the log is located is called `dev-debug.log`
 
 ## clear-functions
 
-* deletes all functions in `lgsm/functions` and removes default LinxuGSM configs.
+* deletes all functions in `lgsm/functions` and removes default LinuxGSM configs.
 
 ```bash
 ./gameserver clear-fuctions
 ./gameserver cf
 ```
-

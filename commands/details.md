@@ -4,15 +4,13 @@ The `details` command allows access to various useful information about the game
 
 ## Commands
 
-### details
-
 Standard: `./gameserver details`
 
 Short: `./gameserver dt`
 
 ### postdetails
 
-`postdetails` \(using hastebin\) is used to share server details, to help with support, while hiding sensitive information:
+`postdetails` (using [termbin.com](https://termbin.com/)) is used to share server details, to help with support, while hiding sensitive information:
 
 Standard: `./gameserver postdetails`
 
@@ -95,4 +93,3 @@ netstat -atunp | grep srcds_linux
 DESCRIPTION  DIRECTION  PORT   PROTOCOL
 > Game/RCON  INBOUND    27015  tcp/udp
 ```
-

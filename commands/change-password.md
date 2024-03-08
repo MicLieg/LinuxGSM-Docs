@@ -19,4 +19,3 @@ The password is given on server installation. Passwords can also be found in the
 Standard: `./gameserver change-password`
 
 Short: `./gameserver pw`
-

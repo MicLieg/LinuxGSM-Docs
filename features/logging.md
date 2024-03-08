@@ -12,7 +12,7 @@ This "log" directory contains two other directories:
 * `console`, logs gameserver `[console](../commands/console.md)` output
 * `game`, is a redirect to the game server log files if available.
 
-  **Settings**
+## Settings
 
 You can alter these settings to change LinuxGSM behavior:
 
@@ -38,4 +38,3 @@ LinuxGSM also clears logs from common locations to prevent them from using gigab
 * `${systemdir}/data/ulx_logs`
 
 _Note:_ `${systemdir}` _designates the location of your game server installation_
-

@@ -50,7 +50,7 @@ Add to the following to the config `lgsm/config-lgsm/csgoserver/csgoserver.cfg` 
 
 AS well it is needed to add a few options to the game config (default in: `serverfiles/csgo/cfg/csgoserver.cfg` )
 
-```
+```bash
 sv_mincmdrate 128
 sv_minupdaterate 128
 ```
@@ -61,8 +61,14 @@ This will as well force the client to use the 128 tickrate
 
 For CSGO, edit these lines in your [LinuxGSM config](../configuration/linuxgsm-config.md)
 
-```
+```bash
 wsapikey="YOUR_STEAM_API_KEY"
 wscollectionid="YOUR_COLLECTION_ID"
 wsstartmap="
 ```
+
+## **Server Tips**
+
+If players are respawning in random locations on custom maps, set mp\_randomspawn to 0.
+
+If players are being banned for dying too much, such as on minigames maps, as a workaround set mp\_autokick to 0. **Warning, this disables AFK and Teamkilling kicks as well.**

@@ -1,8 +1,6 @@
 # Home
 
-
-
-<figure><img src=".gitbook/assets/LinuxGSM_github_header.jpg" alt=""><figcaption></figcaption></figure>
+![LinuxGSM Logo](.gitbook/assets/LinuxGSM_github_header.jpg)
 
 The command-line tool for quick, simple deployment and management of Linux dedicated game servers.
 

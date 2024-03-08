@@ -127,4 +127,3 @@ The you can use the following command:
 * AdminPublishMapList - Overrides the server's map list for the current game type with the one on the client that used the command
 
 When your done you can logout with: AdminLogout
-

@@ -12,14 +12,14 @@ For a game server to be seen online it normally has to register itself on a mast
 
 LinuxGSM can check that supported game servers are listed on the steam master server. This is useful for confirming that the server is actually registering and to help diagnose issues.
 
-You can check that your server is listed on the master server by using `./gameserver details`&#x20;
+You can check that your server is listed on the master server by using `./gameserver details`
 
 ```
 Master server:    listed
 ```
 
 {% hint style="info" %}
-Not all game servers support this option but if it does the setting is set to true by default.&#x20;
+Not all game servers support this option but if it does the setting is set to true by default.
 {% endhint %}
 
 ```

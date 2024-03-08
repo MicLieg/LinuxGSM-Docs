@@ -25,11 +25,11 @@ With a default LinuxGSM Install, server settings can be configured in this file:
 
 `/home/user/serverfiles/System/ut99server.ini`
 
-You can change most of these settings in a browser by enabling the webserver and putting in settings there.&#x20;
+You can change most of these settings in a browser by enabling the webserver and putting in settings there.
 
 ```
 [Engine.GameReplicationInfo]
-ServerName= 
+ServerName=
 ShortName=
 AdminName=
 AdminEmail=
@@ -37,7 +37,7 @@ Region=0
 MOTDLine1=
 MOTDLine2=
 MOTDLine3=
-MOTDLine4= 
+MOTDLine4=
 
 [Botpack.ChallengeBotInfo]
 Difficulty=4

@@ -216,7 +216,7 @@ To get individual item IDs from collections you can use the [Steam Collection ID
 
 ## IP Addressing
 
-### Multihome&#x20;
+### Multihome
 
 The `-MultiHome` parameter is used to bind the server to a specific interface. By default, LinxuGSM sets this to the `${ip}` variable.
 
@@ -234,13 +234,13 @@ A [CrossARK](https://ark.wiki.gg/wiki/CrossARK\_Transfers) cluster allows player
 
 ### Cluster ID
 
-&#x20;The cluster ID is the global name of the cluster. Each instance that will be attached to the cluster must have the same cluster ID. Use `-ClusterId=<CLUSTER NAME>`to specify the cluster ID.
+The cluster ID is the global name of the cluster. Each instance that will be attached to the cluster must have the same cluster ID. Use `-ClusterId=<CLUSTER NAME>`to specify the cluster ID.
 
 ### Cluster Directory
 
 Each server instance must be able to access the _cluster directory_. The cluster directory is a shared location that allows survivor and other data to be shared between server instances.
 
-By default the cluster directory is `ShooterGame/Saved/clusters/<CLUSTER NAME>`. Depending upon your configuration it may be required that instances need to be pointed to a specific shared directory. To do this use add the`-ClusterDirOverride=<PATH>`  parameter with the directory location.&#x20;
+By default the cluster directory is `ShooterGame/Saved/clusters/<CLUSTER NAME>`. Depending upon your configuration it may be required that instances need to be pointed to a specific shared directory. To do this use add the`-ClusterDirOverride=<PATH>`  parameter with the directory location.
 
 The shared directory can be any preferred location however each instance must be able to read and write to that directory.
 
@@ -288,7 +288,7 @@ defaultmap="Ragnarok"
 ${defaultmap}?SessionName=LinuxGSM-Server-2?AltSaveDirectoryName=${altsavedirectoryname}?RCONPort=${rconport} -MultiHome=${ip} -Port=${port} -QueryPort=${queryport} -AutoManagedMods -Crossplay -PublicIPForEpic=${publicip} -ClusterId=hsqCd8MR65VFRFdPcDjw
 ```
 
-Once both server instances have been started check that the cluster directory has been created in `ShooterGame/Saved/clusters/hsqCd8MR65VFRFdPcDjw`.&#x20;
+Once both server instances have been started check that the cluster directory has been created in `ShooterGame/Saved/clusters/hsqCd8MR65VFRFdPcDjw`.
 
 {% hint style="info" %}
 This may require you to connect to an instance first

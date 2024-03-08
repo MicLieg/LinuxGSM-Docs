@@ -13,7 +13,7 @@ This page is still a work in progress. If you have updated info please edit this
 
 ## **Game Modes**
 
-CS2 features various game modes, which can be played on your server. To make setting up your server a bit easier, the following table sums up the configuration required in your server's [LinuxGSM config](../configuration/linuxgsm-config.md) for the various game modes. If you want more detailed and up-to-date information, take a look at Valve's wiki: [CS2 Game Modes](https://developer.valvesoftware.com/wiki/CS:GO\_Game\_Modes).&#x20;
+CS2 features various game modes, which can be played on your server. To make setting up your server a bit easier, the following table sums up the configuration required in your server's [LinuxGSM config](../configuration/linuxgsm-config.md) for the various game modes. If you want more detailed and up-to-date information, take a look at Valve's wiki: [CS2 Game Modes](https://developer.valvesoftware.com/wiki/CS:GO\_Game\_Modes).
 
 | \[Game Modes]                     | gametype | gamemode | gamemodeflags | skirmishid | mapgroup (you can mix these across all Game Modes except Danger Zone, but use only one)                                                                             |
 | --------------------------------- | -------- | -------- | ------------- | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

@@ -11,4 +11,3 @@ Short: `./gameserver d`
 {% hint style="success" %}
 To exit debug mode use `CTRL+c`
 {% endhint %}
-

@@ -28,9 +28,9 @@ AccessToken=TOKEN HERE
 
 Add the `-Mods` parameter to your game server [start parameters](../configuration/start-parameters.md).
 
-Next you will need to specify which mods you want to add to your game server.&#x20;
+Next you will need to specify which mods you want to add to your game server.
 
-Create the `Mods.txt` file located `Insurgency/Config/Server/Mods.txt`&#x20;
+Create the `Mods.txt` file located `Insurgency/Config/Server/Mods.txt`
 
 ```
 mkdir -p Insurgency/Config/Server
@@ -51,7 +51,7 @@ Create `MapCyle.txt`and add the custom map to your mapcycle.
 
 ```
 touch Insurgency/Config/Server/MapCyle.txt
-   
+
 ```
 
 ```

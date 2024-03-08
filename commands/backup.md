@@ -14,7 +14,7 @@ Short: `./gameserver b`
 
 ## Example Output
 
-```text
+```bash
 mumbleserver@game:~$ ./mumbleserver b
 [ INFO ] Backup mumble-server: A total of 34M will be compressed into the following backup:
 /home/mumbleserver/backups/mumble-server-2016-10-28-194346.tar.gz
@@ -82,9 +82,9 @@ By default backups are saved in the `backup` directory.
 ```text
 ├── home
 ├── csgoserver
-    ├── ** backup **       
+    ├── ** backup **
     ├── lgsm
-    ├── log       
+    ├── log
     ├── serverfiles
 ```
 
@@ -141,4 +141,3 @@ duplicity-backup.sh is a very useful bash wrapper to help automate duplicity.
 [rclone](http://rclone.org) is similar to rsync however can easily sync to cloud storage solutions.
 
 {% embed url="http://rclone.org" caption="" %}
-

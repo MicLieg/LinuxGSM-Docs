@@ -16,7 +16,7 @@ To disable autorefresh, add `-disableluarefresh` to parms.
 
 ## Loading Screen
 
-Loading screens are added by defining a website with `sv_loadingurl`, which is in `gmodserver.cfg` by default.  This file overrides other files. &#x20;
+Loading screens are added by defining a website with `sv_loadingurl`, which is in `gmodserver.cfg` by default.  This file overrides other files.
 
 {% hint style="warning" %}
 Links should not have `http://` or an ending`/` .

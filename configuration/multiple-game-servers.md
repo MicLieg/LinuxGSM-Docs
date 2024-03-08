@@ -14,22 +14,22 @@ Make sure that you examine this page carefully and understand all of its content
 
 ## Prerequisites
 
-#### Vocabulary
+### Vocabulary
 
 You need some definitions to make this guide clear.
 
 * **Installation:** An _installation_ refers to the base directory of a game server. This is where the files required to run a game server is stored.
 
-```
-/home/gameserver/serverfiles
-```
+    ```text
+    /home/gameserver/serverfiles
+    ```
 
 * **Instance:** Each individual game server is referred to as an _instance._ There might be multiple instances running per installation. An instance is started by running the `./gameserver` script
 
-```
-/home/gameserver/gameserver
-/home/gameserver/gameserver-2
-```
+    ```text
+    /home/gameserver/gameserver
+    /home/gameserver/gameserver-2
+    ```
 
 * **User:** Each game server installation should run using its own _Linux user_. Although it is possible to have multiple _installations_ per user.
 
@@ -47,13 +47,13 @@ Single instance per installation is the most simple method and will fit most use
 
 This consists of creating a new user for each game server, repeating the install process, and edit your config files ensuring default ports are changed.
 
-### Use cases
+### Use cases for single instance
 
 * Running different game servers requires installation in a different directory
 * Running multiple servers of the same game, but they have different content, addons or mods.
 * You want your game servers to be totally separate for simplicity and reduce the chance of multiple instances breaking all at once.
 
-#### Pros
+#### Pros for single instance
 
 * Easy to setup
 * Separate installations partition the game servers from each other
@@ -61,27 +61,27 @@ This consists of creating a new user for each game server, repeating the install
 * More secure, by keeping instances separate with there own user.
 * Reduced risk of breaking multiple instances.
 
-#### Cons
+#### Cons for single instance
 
 * Requires more disk space as server files can not be shared
 * Each instance has to be individually setup.
 
-### Examples
+### Examples for single instance
 
 The installs are separated and isolated from each other in each users _home directory_.
 
 | Game Server                      | User               | LinuxGSM Script location            |
 | -------------------------------- | ------------------ | ----------------------------------- |
-| Garry’s Mod                      | gmodserver         | /home/gmodserver/gmodserver         |
-| Garry’s Mod                      | gmodserver-slender | /home/gmodserver-slender/gmodserver |
+| Garry's Mod                      | gmodserver         | /home/gmodserver/gmodserver         |
+| Garry's Mod                      | gmodserver-slender | /home/gmodserver-slender/gmodserver |
 | Counter-Strike: Global Offensive | csgoserver         | /home/csgoserver/csgoserver         |
 | Counter-Strike: Global Offensive | csgoserver-zombies | /home/csgoserver-zombies/csgoserver |
 
 ### How to Install
 
-1. Create a new user with a home directory.&#x20;
+1. Create a new user with a home directory.
 2. Repeat the standard installation process using this new user.
-3. Change the instance config adjusting ports numbers from the default&#x20;
+3. Change the instance config adjusting ports numbers from the default
 
 ## Single Installation with Multiple Instances
 
@@ -93,19 +93,19 @@ This consists of creating a new LinuxGSM executable file `./gameserver-2` in the
 Most but not all game servers work with this method
 {% endhint %}
 
-### Use cases
+### Use cases for multiple instances
 
 * Running cloning an existing game server by creating a new instance.
 * Running the same game server with different game modes, maps etc.
 * Running multiple instances even with limited disk space available.
 
-#### Pros
+#### Pros for multiple instances
 
 * Uses less disk space as base installation is the same
 * Less configuration required
 * It is possible to use different game modes and map rotations by editing configs.
 
-#### Cons
+#### Cons for multiple instances
 
 * Each instance shares the same files which may limit options to customise an instance
 * Potential mod conflicts
@@ -113,13 +113,13 @@ Most but not all game servers work with this method
 
 ### How it works
 
-You have one game server installation, but you have multiple instances start in the same installation using different config files.&#x20;
+You have one game server installation, but you have multiple instances start in the same installation using different config files.
 
 Every time a new instance is created, new default config files are created. This allows each instance to have different hostname, ports etc. The config files are by default the same name as the instance script. For example, if the script is `./gameserver-2` the config is `gameserver-2.cfg`. You can see the location of config files in `./gameserver-2 details` (replace "instance" with your actual instance name).
 
 Each instance is managed using its own script which gives the config file names. These can be renamed how you like, however, the default will simply have an incremental number. Some admins may choose to name them after the server port, the map or the gamemode instead.
 
-### Examples
+### Examples for multiple instances
 
 | Game                             | User       | LinuxGSM Script location                  | notes                    |
 | -------------------------------- | ---------- | ----------------------------------------- | ------------------------ |
@@ -133,9 +133,9 @@ In these examples, you can see the scripts are located in the same installation 
 
 ### How to install
 
-`linuxgsm.sh` allows you to generate as many instances as you want by running .&#x20;
+`linuxgsm.sh` allows you to generate as many instances as you want by running .
 
-```
+```text
 ./linuxgsm.sh install
 OR
 ./linuxgsm.sh gameserver
@@ -143,7 +143,7 @@ OR
 
 It will generate a new LinuxGSM script using an incremental number.
 
-```
+```text
 ./gameserver-2
 ```
 

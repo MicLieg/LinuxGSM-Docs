@@ -30,8 +30,7 @@ Short: `./gameserver fd`
 
 ## Requirements
 
-*   Web server on the game server (Apache/Nginx).
-
+* Web server on the game server (Apache/Nginx).\
     or
 * Access to a remote web server.
 
@@ -59,9 +58,9 @@ Firstly make sure your subdomain redirects to your game server and that Apache2 
 
 `nano /etc/apache2/sites-available/yourvirtualhost.com.conf`
 
-See the example below and edit the relevent details.
+See the example below and edit the relevant details.
 
-```
+```bash
 <VirtualHost *:80>
         ServerAdmin adminemail@domain.com
         ServerName subdomain.domain.com
@@ -81,7 +80,7 @@ See the example below and edit the relevent details.
 
 Enable your website by restarting Apache2
 
-```
+```bash
 a2ensite yourvirtualhost.com.conf
 service apache2 reload
 ```
@@ -96,7 +95,7 @@ The new url will need to be added to the [game server config](../configuration/g
 
 Make sure you have this:
 
-```
+```bash
 sv_downloadurl "http://subdomain.domain.com/fastdl"
 sv_allowdownload 1
 ```

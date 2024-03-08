@@ -41,13 +41,13 @@ Note: (example) `./gameserver details` will provide you with relevant informatio
 * Are ports already used by another service? See [Ports](networking/ports.md) and [Multiple-Game-Servers](configuration/multiple-game-servers.md)
 * Is this a known tmux issue? See [Tmux](requirements/tmux.md)
 * Did you try to start with the `debug` command? See [debug](commands/debug.md)
-* What does the logs say? See \[[Logging](features/logging.md)
+* What does the logs say? See [Logging](features/logging.md)
 * Do you have enough RAM? If not, do you have enough swap? Check command: `free -mh`
 * Did you set an ip in your (example) gameserver script or config file?
 
 ### Modded servers start issues
 
-* What does the logs say? See \[[Logging](features/logging.md)
+* What does the logs say? See [Logging](features/logging.md)
 * Did you try to start with the `debug` command? See [debug](commands/debug.md)
 * Did you wrongly append start parameters? See [Start-Parameters](configuration/start-parameters.md)
 * Did you try temporarily removing mods, and adding them one by one?
@@ -55,7 +55,7 @@ Note: (example) `./gameserver details` will provide you with relevant informatio
 
 ### Server start issues after updates
 
-* What does the logs say? See \[[Logging](features/logging.md)
+* What does the logs say? See [Logging](features/logging.md)
 * Did you try to start with the `debug` command? See [debug](commands/debug.md)
 * Did you try to validate your game files? (SteamCMD servers only) See [validate](commands/validate.md)
 * Is a mod no longer compatible? Try temporarily removing mods, and adding them one by one.
@@ -65,18 +65,23 @@ Note: (example) `./gameserver details` will provide you with relevant informatio
 
 ### Unable to connect or not showing up in server list
 
-This is a three part diagnosis: 1) First off, you need to make sure that the server is started properly, take attention to any error messages in console or log output. 2) Check that the server is listening, to the right IP. 3) Check for firewalls or ports redirections that could prevent useful network packets from passing through.
+This is a three part diagnosis:
+
+1. First off, you need to make sure that the server is started properly, take attention to any error messages in console or log output.
+2. Check that the server is listening, to the right IP.
+3. Check for firewalls or ports redirections that could prevent useful network packets from passing through.
 
 #### Is the server actually started?
 
-* Start it with (example `./gameserver start` , then check server logs (see \[[Logging](features/logging.md)) to see if everything seems OK. You can also try the [details](commands/details.md) command and [monitor](commands/monitor.md) command to see if it's online and if it's able to answer simple queries. If not, then follow the "Start issues" section.
+* Start it with `./gameserver start`, then check the [server logs](features/logging.md) to see if everything seems OK. You can also try the [details](commands/details.md) and [monitor](commands/monitor.md) command to see if the server is online and able to answer simple queries. If not, then follow the "Start issues" section.
 
 #### Is the server actually listening?
 
 `./gameserver details` will provide you with the corresponding command to check if the server process is properly listening. Example sample output:
 
-```
 Useful port diagnostic command:
+
+```bash
 netstat -atunp | grep srcds_linux
 ```
 
@@ -93,9 +98,9 @@ If the output differs or your think something is wrong, here are the things to c
 * Are you behind [Firewalls](linux/firewalls.md)? See [Firewalls](linux/firewalls.md)
 * If it's a local server, are ports redirection done properly? See [Ports](networking/ports.md) and [details](commands/details.md)
 
-#### Other keys to solving this:
+#### Other keys to solving this
 
-* As usual, first thing you have to ask yourself: What do the logs say? See \[[Logging](features/logging.md)
+* As usual, first thing you have to ask yourself: What do the logs say? See [Logging](features/logging.md)
 * Did you wait long enough? Sometimes it's just a matter of time until the server is fully started and listed into the master server list.
 
 ## If none of these work

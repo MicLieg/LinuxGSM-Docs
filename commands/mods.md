@@ -1,6 +1,6 @@
 # mods
 
-LinuxGSM supports the installation, updating, and removing of selected mods and add-ons for some games and engines.  
+LinuxGSM supports the installation, updating, and removing of selected mods and add-ons for some games and engines.
 Zip add-ons are currently the only supported installations.
 
 ## Commands
@@ -25,9 +25,9 @@ Zip add-ons are currently the only supported installations.
 
 ## Supported mods/add-ons
 
-\(This list was last updated on 2020-11-19\)
+(This list was last updated on 2020-11-19)
 
-### Goldsrc Engine Games \(v20.6.0+\)
+### Goldsrc Engine Games (v20.6.0+)
 
 * Metamod
 * AMX Mod X
@@ -67,12 +67,12 @@ Rust, Hurtworld, 7 Days To Die
 
 ### Install
 
-* All available mods are defined in the mods\_list.sh.  
-* Mods hosted on github use the latest archive link available. Others are scraped through a mods download mirrors in order to find the latest version.  
-* If some mods are already installed, a list of installed mods shows up. If a user tries to install a mod that is already installed, there will be a warning that any custom files will be overwritten.  
-* A list of available mods is displayed to the user, including the developers website.  
-* After the user selects a mod, the file gets downloaded and extracted to a temporary directory.  
-* A list of the mod files is created at `lgsm/mods/modname-files.txt`. This list allows the mod to be removed if required. LinuxGSM developers have whitelisted important customisable files such as mod config files that will not be removed. If there are any important files that have been missed please raise an issue.
+* All available mods are defined in the mods\_list.sh.
+* Mods hosted on github use the latest archive link available. Others are scraped through a mods download mirrors in order to find the latest version.
+* If some mods are already installed, a list of installed mods shows up. If a user tries to install a mod that is already installed, there will be a warning that any custom files will be overwritten.
+* A list of available mods is displayed to the user, including the developers website.
+* After the user selects a mod, the file gets downloaded and extracted to a temporary directory.
+* A list of the mod files is created at `lgsm/mods/modname-files.txt`. This list allows the mod to be removed if required. LinuxGSM developers have whitelisted important customizable files such as mod config files that will not be removed. If there are any important files that have been missed please raise an issue.
 * Files and directories then get copied to the correct destination.
 * LinuxGSM updates a file containing a list of installed mods `lgsm/mods/installed-mods.txt`.
 
@@ -84,7 +84,7 @@ Rust, Hurtworld, 7 Days To Die
   * NOUPDATE will prevent this mod from being updated. Useful for a framework that is designed to be entirely customized.
   * RETAIN keeps the whitelisted files and updating everything else.
 * As there is no easy way to check for mod versions, the update process will update every single installed mod every time the command is run.
-* The process is pretty similar as the installation, mod gets downloaded, extracted, files get removed. Removed files go to a temp file list, then file list list built and temp file list added to it. Finaly the mod gets copied to destination using `cp -Rf`.
+* The process is pretty similar as the installation, mod gets downloaded, extracted, files get removed. Removed files go to a temp file list, then file list list built and temp file list added to it. Finally the mod gets copied to destination using `cp -Rf`.
 * If an admin wants to overwrite custom files, then he can either uninstall/reinstall the mod, or just install over it.
 
 ### Remove
@@ -111,6 +111,5 @@ Usually, editing mods\_list.sh should be enough to add mod support. This script 
 
 Basically: Add an array variable containing mod info, then add the array to the global array.
 
-Long explanation: The list is based on arrays, used to define all mod properties. You need to make sure that every value is filled up and in the correct order, that mod commands are unique and that multiple choices values are ended with a semicolon \(;\), otherwise the last value will be ignored.  
+Long explanation: The list is based on arrays, used to define all mod properties. You need to make sure that every value is filled up and in the correct order, that mod commands are unique and that multiple choices values are ended with a semicolon (;), otherwise the last value will be ignored.
 You might need to add an entry in `fn_mod_tidy_files_list` from `mods_core.sh` in order to remove lines from mod's file list so that they do not get wrongly removed with the mods-remove command. For further assistance on developing this contact UltimateByte who developed those functions and dgibbs that reworked it should be able to help.
-

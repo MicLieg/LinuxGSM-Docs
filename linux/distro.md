@@ -8,7 +8,7 @@ LinuxGSM developers primarily use Ubuntu for development and attempt to support 
 
 ### Ubuntu
 
-![](../.gitbook/assets/ubuntu\_black-orange\_hex\_su.png)
+![Ubuntu Logo](../.gitbook/assets/ubuntu\_black-orange\_hex\_su.png)
 
 #### **Reasons to use Ubuntu with LinuxGSM:**
 
@@ -38,7 +38,7 @@ Ubuntu 22.04 LTS is recommended
 
 ### Debian
 
-![](../.gitbook/assets/debian.png)
+![Debian Logo](../.gitbook/assets/debian.png)
 
 #### **Reasons to use Debian with LinuxGSM:**
 
@@ -73,9 +73,41 @@ Debian 12 "Bookworm" is recommended
 
 LinuxGSM also works with Enterprise Linux distributions. Known for their stability and long support cycle Enterprise Linux distros are a great choice for Game Servers
 
+### Rocky Linux
+
+![Rocky Linux Logo](../.gitbook/assets/Rocky_Linux.png)
+
+#### **Reasons to use Rocky Linux with LinuxGSM:**
+
+1. **RHEL Compatibility:** Rocky Linux's binary compatibility with RHEL ensures that LinuxGSM, designed to manage game servers on Linux, will run seamlessly on Rocky Linux. This compatibility guarantees a stable environment for hosting game servers and a familiar experience for users transitioning from CentOS.
+2. **Stability and Long-Term Support:** Game servers require a stable and reliable operating system to ensure continuous gameplay for players. Rocky Linux's focus on stability and long-term support makes it an ideal choice for hosting game servers with LinuxGSM.
+3. **Community-Driven Development:** LinuxGSM benefits from being community-driven, just like Rocky Linux. This alignment in community-focused development fosters a collaborative environment, where users of both projects can actively contribute and seek support from fellow enthusiasts.
+4. **Transparent Security Updates:** Regular security updates and patches in Rocky Linux ensure that your game servers remain secure against potential threats. With LinuxGSM's support for automatic updates, maintaining server security becomes a smoother process.
+
+#### **Ideal Use Cases:**
+
+* Game Server Hosting: Rocky Linux's RHEL compatibility and stability make it an excellent choice for deploying and managing game servers with LinuxGSM.
+* Continuity from CentOS: For users previously running game servers on CentOS with LinuxGSM, transitioning to Rocky Linux ensures a familiar and stable environment.
+
+### **Alma Linux**
+
+![Alma Linux Logo](../.gitbook/assets/Almalinux-logo-white-v2.png)
+
+#### **Reasons to use Alma Linux with LinuxGSM:**
+
+1. **RHEL Compatibility:** Alma Linux's direct binary compatibility with RHEL ensures that LinuxGSM will run seamlessly on Alma Linux, providing a stable platform for hosting game servers.
+2. **Community-Driven Development:** LinuxGSM benefits from being community-driven, just like Rocky Linux. This alignment in community-focused development fosters a collaborative environment, where users of both projects can actively contribute and seek support from fellow enthusiasts.
+3. **Long-Term Support and Stability:** Game servers require consistent performance and long-term support to avoid disruptions. Alma Linux's commitment to stability and long-term support aligns with the requirements of managing game servers using LinuxGSM.
+4. **Security Emphasis:** Alma Linux prioritizes security, providing timely updates and patches. When combined with LinuxGSM's capabilities for automated updates, you can maintain a secure gaming environment effortlessly.
+
+#### **Ideal Use Cases:**
+
+* CentOS Replacement: For users transitioning from CentOS to Alma Linux for hosting game servers with LinuxGSM, the distribution's RHEL compatibility ensures continuity and stability.
+* Enterprise Game Server Deployments: Alma Linux's enterprise-grade stability and long-term support make it well-suited for hosting game servers in professional gaming environments.
+
 ### CentOS
 
-![](../.gitbook/assets/centos.png)
+![CentOS Logo](../.gitbook/assets/centos.png)
 
 {% hint style="info" %}
 CentOS is no longer recommended for use with LinuxGSM for hosting game servers.
@@ -101,42 +133,6 @@ Rocky Linux or Alma Linux are now the recommended alternative Enterprise Linux D
 | 8                  | 2019-09-24       | 2021-12-31     |                      |
 | Stream 8           | 2019-09-24       | 2024-05-31     |                      |
 | Stream 9           | 2021-12-03       | 2027-05-31     |                      |
-
-### Rocky Linux
-
-
-
-<figure><img src="../.gitbook/assets/Rocky_Linux.png" alt=""><figcaption></figcaption></figure>
-
-#### **Reasons to use Rocky Linux with LinuxGSM:**
-
-1. **RHEL Compatibility:** Rocky Linux's binary compatibility with RHEL ensures that LinuxGSM, designed to manage game servers on Linux, will run seamlessly on Rocky Linux. This compatibility guarantees a stable environment for hosting game servers and a familiar experience for users transitioning from CentOS.
-2. **Stability and Long-Term Support:** Game servers require a stable and reliable operating system to ensure continuous gameplay for players. Rocky Linux's focus on stability and long-term support makes it an ideal choice for hosting game servers with LinuxGSM.
-3. **Community-Driven Development:** LinuxGSM benefits from being community-driven, just like Rocky Linux. This alignment in community-focused development fosters a collaborative environment, where users of both projects can actively contribute and seek support from fellow enthusiasts.
-4. **Transparent Security Updates:** Regular security updates and patches in Rocky Linux ensure that your game servers remain secure against potential threats. With LinuxGSM's support for automatic updates, maintaining server security becomes a smoother process.
-
-#### **Ideal Use Cases:**
-
-* Game Server Hosting: Rocky Linux's RHEL compatibility and stability make it an excellent choice for deploying and managing game servers with LinuxGSM.
-* Continuity from CentOS: For users previously running game servers on CentOS with LinuxGSM, transitioning to Rocky Linux ensures a familiar and stable environment.
-
-### **Alma Linux**
-
-
-
-<figure><img src="../.gitbook/assets/Almalinux-logo-white-v2.png" alt=""><figcaption></figcaption></figure>
-
-#### **Reasons to use Alma Linux with LinuxGSM:**
-
-1. **RHEL Compatibility:** Alma Linux's direct binary compatibility with RHEL ensures that LinuxGSM will run seamlessly on Alma Linux, providing a stable platform for hosting game servers.
-2. **Community-Driven Development:** LinuxGSM benefits from being community-driven, just like Rocky Linux. This alignment in community-focused development fosters a collaborative environment, where users of both projects can actively contribute and seek support from fellow enthusiasts.
-3. **Long-Term Support and Stability:** Game servers require consistent performance and long-term support to avoid disruptions. Alma Linux's commitment to stability and long-term support aligns with the requirements of managing game servers using LinuxGSM.
-4. **Security Emphasis:** Alma Linux prioritizes security, providing timely updates and patches. When combined with LinuxGSM's capabilities for automated updates, you can maintain a secure gaming environment effortlessly.
-
-#### **Ideal Use Cases:**
-
-* CentOS Replacement: For users transitioning from CentOS to Alma Linux for hosting game servers with LinuxGSM, the distribution's RHEL compatibility ensures continuity and stability.
-* Enterprise Game Server Deployments: Alma Linux's enterprise-grade stability and long-term support make it well-suited for hosting game servers in professional gaming environments.
 
 ### EPEL
 

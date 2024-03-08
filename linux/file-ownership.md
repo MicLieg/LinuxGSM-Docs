@@ -2,18 +2,18 @@
 
 ## Introduction
 
-Linux files and directories always belong to a user and group. That is what we call ownership.  
+Linux files and directories always belong to a user and group. That is what we call ownership.
 If this can be boring to new users, remember that this is a huge part of what makes Linux as secure as it is.
 
 ## Check current ownership
 
-### Check ownership in the current directory:
+### Check ownership in the current directory
 
 `ls -l`
 
 Example output:
 
-```text
+```bash
 ultimatebyte@game:~$ ls -l
 total 32
 drwxr-xr-x 5 ultimatebyte ultimatebyte 4096 Jan 29 22:26 lgsm
@@ -41,7 +41,7 @@ Syntax of the output is:
 
 Sample output:
 
-```text
+```bash
 ultimatebyte@game:~$ ls -al /home/ultimatebyte
 total 132
 drwxr-xr-x 11 ultimatebyte ultimatebyte  4096 Feb  2 07:36 . # Ownership from the current given dir
@@ -64,13 +64,13 @@ drwxr-xr-x  5 ultimatebyte ultimatebyte  4096 Jan 29 22:24 steamcmd
 -rw-r--r--  1 ultimatebyte ultimatebyte    29 Jan 30 02:17 .tw-server.lock
 ```
 
-## All these commands require elevated privileges!
+## All these commands require elevated privileges
 
-## Change owner
+### Change owner
 
 Change owner from files or directories
 
-### Command
+#### Command
 
 `chown`
 
@@ -88,43 +88,42 @@ As usual, `chown --help` will provide you with all available arguments
 
 `chown -R myuser /home/myuser`
 
-## Group ownership
+### Group ownership
 
 Change group ownership on files or directories
 
-### Command
+#### Command
 
 `chgrp`
 
 As usual, `chgrp --help` will provide you with all available arguments
 
-### Single file syntax
+#### Single file syntax
 
 `chgrp newgroup /path/to/dir/or/file`
 
-### Recursive syntax \(include sub files and directories\)
+#### Recursive syntax \(include sub files and directories\)
 
 `chgrp -R newgroup /path/to/dir/`
 
-## User and group ownership
+### User and group ownership
 
 Change user and/or ownership for files and directories at the same time
 
-### Command
+#### Command
 
 `chown`
 
 As usual, `chown --help` will provide you with all available arguments
 
-### Single file command
+#### Single file command
 
 `chown user:group /path/to/dir/or/file`
 
-### Recursive
+#### Recursive
 
 `chown -R user:group /path/to/dir`
 
-#### Example:
+#### Example
 
-chown -R myuser:myuser /home/myuser
-
+`chown -R myuser:myuser /home/myuser`

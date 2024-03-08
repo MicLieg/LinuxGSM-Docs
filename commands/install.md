@@ -69,9 +69,9 @@ If trying to run as `root` LinuxGSM will fail to run. See [FAQ](../support/faq.m
 
 To check if the correct user owns the directory or `gameserver` file, use `ls -al`
 
-**Example output**
+#### Example output
 
-```
+```text
 drwxrwxr-x  5 nmrihserver nmrihserver 4096 Jul 17 20:25 lgsm
 drwxr-xr-x  4 nmrihserver nmrihserver 4096 Aug 27  2015 log
 -rwxrwxr-x  1 nmrihserver nmrihserver 3885 Aug  9 23:04 nmrihserver
@@ -111,7 +111,7 @@ To check your available storage, use:
 
 Make sure you can `ping` using a hostname.
 
-```
+```bash
 ping google.com
 ```
 

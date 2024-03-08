@@ -39,7 +39,7 @@ Replace `./gameserver` with the actual script name. Every command has a short ve
 | ----------------------------------- | ----------------------------- | ----------------- |
 | [Map Compressor](map-compressor.md) | `./gameserver map-compressor` | `./gameserver mc` |
 
-### Rust&#x20;
+### Rust
 
 
 
@@ -57,4 +57,4 @@ Replace `./gameserver` with the actual script name. Every command has a short ve
 | Detect Glibc                                                                                                                                    | `./gameserver detect-glibc`   | `./gameserver dg`  |
 | Detect ldd                                                                                                                                      | `./gameserver detect-ldd`     | `./gameserver dl`  |
 | Query Raw                                                                                                                                       | `./gameserver query-raw`      | `./gameserver qr`  |
-| Clear Modules                                                                                                                                   | `./gameserver clear-moeuldes` | `./gameserver cm`  |
+| Clear Modules                                                                                                                                   | `./gameserver clear-moduldes` | `./gameserver cm`  |

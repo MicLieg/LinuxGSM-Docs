@@ -1,12 +1,10 @@
 # Start Parameters
 
-
-
 {% hint style="info" %}
 Also known as Command-Line Parameters, Command line arguments, or Launch Parameters.
 {% endhint %}
 
-Many game servers require _start parameters_, these are command-line options that are set with the server executable when the server starts.&#x20;
+Many game servers require _start parameters_, these are command-line options that are set with the server executable when the server starts.
 
 Using [game server configs](game-server-config.md) over parameters is preferred, however, sometimes this is not an option. When this is the case only parameters or a mixture of game server config and parameters will be used.
 
@@ -16,7 +14,7 @@ Parameters being used by the game server can be found in `./gameserver details`.
 
 LinuxGSM often uses predefined parameters that can be edited. This makes adjusting common settings easier and allows them to be displayed in `./gameserver details`.
 
-```
+```bash
 ## Predefined Parameters | https://docs.linuxgsm.com/configuration/start-parameters
 defaultmap="map_name"
 gamemode="game_mode"
@@ -28,7 +26,7 @@ clientport="27005"
 
 ## Additional Parameters
 
-Additional command-line parameters can be added to the `startparameters` setting.&#x20;
+Additional command-line parameters can be added to the `startparameters` setting.
 
 Anything added will be appended to the server executable binary.
 
@@ -40,7 +38,7 @@ Anything added will be appended to the server executable binary.
 
 ### Full Example
 
-```
+```bash
 ## Server Parameters | https://docs.linuxgsm.com/configuration/start-parameters#additional-parameters
 startparameters="-game nmrih -strictportbind -ip 91.121.72.41 -port 27015 +clientport 27017 +tv_port 27016 +map nmo_broadway +servercfgfile nmrih-server-1.cfg -maxplayers 8"
 ```

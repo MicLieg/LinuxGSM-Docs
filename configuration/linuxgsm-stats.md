@@ -51,7 +51,7 @@ Short answer - Yes
 
 Long answer - All information gathered is anonymous, the server IP address, hostname, etc., or other identifying information is not collected. \
 \
-When LinuxGSM Stats is first run it creates a [UUID (Unique identifier)](https://en.wikipedia.org/wiki/Universally\_unique\_identifier) which is a randomly generated ID to allow Google Analytics to identify your unique information anonymously. Since this ID is random there is no way to know where the info is from, only that it is from the same sender.&#x20;
+When LinuxGSM Stats is first run it creates a [UUID (Unique identifier)](https://en.wikipedia.org/wiki/Universally\_unique\_identifier) which is a randomly generated ID to allow Google Analytics to identify your unique information anonymously. Since this ID is random there is no way to know where the info is from, only that it is from the same sender.
 
 The UUID is located in`lgsm/data/uuid.txt`,if this file is deleted a new UUID will be generated.
 
@@ -64,6 +64,3 @@ Data is sent every time the monitor runs as this is the only way to regularly se
 ## How can I enable this feature?
 
 To enable LinuxGSM Stats simply add the `stats="on"` setting to the `common.cfg` file. This can also be enabled on install.
-
-
-

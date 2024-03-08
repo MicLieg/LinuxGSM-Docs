@@ -16,7 +16,7 @@ A [distributed denial-of-service](https://en.wikipedia.org/wiki/Denial-of-servic
 
 One way to protect a game server is to rate-limit incoming connections to the game server. Iptables will do this by dropping packets from a connection if it is sending too much traffic. This is particularly important if using the LinuxGSM monitor feature, as monitor relies on the query port being available. Should the query port be flooded with traffic it may become unavailable and LinuxGSM will assume the game server has crashed and reboot. The below example will rate-limit traffic on port 27015 \(the default for source engine games\) to 10 requests every 60 seconds. Different game servers may require different rate limits, so it may be important to adjust the limits to ensure legitimate traffic does not get blocked.
 
-```text
+```bash
 iptables -A INPUT -p udp -m udp --dport 27015 -m state --state NEW -m recent --set --name DEFAULT --rsource
 iptables -A INPUT -p udp -m udp --dport 27015 -m state --state NEW -m recent --update --seconds 60 --hitcount 10 --name DEFAULT --rsource -j DROP
 ```
@@ -33,8 +33,8 @@ Some game servers \(like Rust\) register their external IP with steam when they 
 [eth0] 192.168.1.1 (LAN)
      |  |
 -----------------
-|                | --[WAN0] 71.2.5.23 (ISP A)  
-|                | --[WAN1] 65.13.29.46 (ISP B)  
+|                | --[WAN0] 71.2.5.23 (ISP A)
+|                | --[WAN1] 65.13.29.46 (ISP B)
 ------------------
 ```
 

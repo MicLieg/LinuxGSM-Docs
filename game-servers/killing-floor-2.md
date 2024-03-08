@@ -4,9 +4,9 @@
 
 ## Ports
 
-* **Game Port** Default: 7777 UDP Handled by: `LinuxServer-KFEngine.ini`&#x20;
-* **Query Port** Default: 27015 UDP Handled automatically or handled by parameters. The formula for finding query port assigned automatically is 19238 + assigned game port.&#x20;
-* **Web Admin** Default: 8080 TCP Handled by: `KFWeb.ini`&#x20;
+* **Game Port** Default: 7777 UDP Handled by: `LinuxServer-KFEngine.ini`
+* **Query Port** Default: 27015 UDP Handled automatically or handled by parameters. The formula for finding query port assigned automatically is 19238 + assigned game port.
+* **Web Admin** Default: 8080 TCP Handled by: `KFWeb.ini`
 * **Steam Port** Default: 20560 UDP Handled automatically. The formula for finding the steam port is 12783 + Game Port.
 
 ## Resources

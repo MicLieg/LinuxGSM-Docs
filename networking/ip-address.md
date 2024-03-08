@@ -1,6 +1,6 @@
 # IP Address
 
-Depending upon the configuration of your server you may need to be more aware of its IP address configuration and how it relates to your game server.&#x20;
+Depending upon the configuration of your server you may need to be more aware of its IP address configuration and how it relates to your game server.
 
 {% hint style="success" %}
 This guide is not designed to be an in-depth guide to networking, instead focusing on parts relevant to game servers.
@@ -8,13 +8,13 @@ This guide is not designed to be an in-depth guide to networking, instead focusi
 
 ## Network Locations
 
-Your game server can be hosted online using a server provider such as Linode or on a [local network](broken-reference) at home for either local-only LAN parties or allowing online players in through your router.&#x20;
+Your game server can be hosted online using a server provider such as Linode or on a [local network](broken-reference) at home for either local-only LAN parties or allowing online players in through your router.
 
 ### Internet (Public)
 
-If your server is hosted on the internet using a server provider you should have been allocated a public internet IP address that will be accessible by everyone on the internet.&#x20;
+If your server is hosted on the internet using a server provider you should have been allocated a public internet IP address that will be accessible by everyone on the internet.
 
-### Local Networks (Private)&#x20;
+### Local Networks (Private)
 
 Using a home server or virtual machine on your desktop is a great way to get started with LinuxGSM. However, a local network (LAN) may require a better understanding of networking equipment, how local IP addressing works, and technologies such as [DHCP](https://en.wikipedia.org/wiki/Dynamic\_Host\_Configuration\_Protocol) and [NAT](https://en.wikipedia.org/wiki/Network\_address\_translation).
 
@@ -28,7 +28,7 @@ All computers will have some sort of physical or virtual [network interface](htt
 ip -o link show
 ```
 
-Typically you may see (depending on distro) a `localhost` loopback interface and an `eth0` interface. The `eth0` (Ethernet) is used for your standard copper network cable and is what you will likely see. If you have multiple interfaces you may also see `eth1`, `eth2`, etc. More advanced setups can choose to bond together interfaces to work as one to increase bandwidth and resilience.&#x20;
+Typically you may see (depending on distro) a `localhost` loopback interface and an `eth0` interface. The `eth0` (Ethernet) is used for your standard copper network cable and is what you will likely see. If you have multiple interfaces you may also see `eth1`, `eth2`, etc. More advanced setups can choose to bond together interfaces to work as one to increase bandwidth and resilience.
 
 ## IP Address
 
@@ -69,7 +69,7 @@ If you have multiple interfaces you may choose to multihome your server. This si
 
 ## 0.0.0.0
 
-The 0.0.0.0 IP is a meta-address means non-specific or all addresses. When you set up a game server you may notice the IP address 0.0.0.0 in command line parameters and settings. It is the default IP for game servers just signifies that the game server can bind to all available server IP addresses.&#x20;
+The 0.0.0.0 IP is a meta-address means non-specific or all addresses. When you set up a game server you may notice the IP address 0.0.0.0 in command line parameters and settings. It is the default IP for game servers just signifies that the game server can bind to all available server IP addresses.
 
 {% hint style="success" %}
 Unless a specific IP address is required the game server IP can be set to 0.0.0.0.

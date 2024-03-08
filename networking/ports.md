@@ -1,6 +1,6 @@
 # Ports
 
-Ports are communication endpoints for an application. A port will either listen to or transmit network traffic on specific ports.&#x20;
+Ports are communication endpoints for an application. A port will either listen to or transmit network traffic on specific ports.
 
 There are port standards set by IANA for common protocols such as HTTP (port 80), SSH (port 22), SMTP (port 25), etc. Game servers tend to use standard ports depending on the game engine. For example source engine games by default use port 27015 as the port it listens on.
 
@@ -37,7 +37,7 @@ App          28082  tcp       1
 
 ## Changing Default Ports
 
-Default ports are set in either the [start parameters](../configuration/start-parameters.md) or [game config](../configuration/game-server-config.md).&#x20;
+Default ports are set in either the [start parameters](../configuration/start-parameters.md) or [game config](../configuration/game-server-config.md).
 
 You can use `./gameserver details` to find out where to edit port settings
 
@@ -129,7 +129,7 @@ If you are running several game servers it is a good idea to create a spreadshee
 Ensure the game server ports are bound and listening before anything else. You can check if your server is actually listening by using `./gameserver details` if a port is bound and listening then the `LISTEN` column will not be zero.
 
 {% hint style="info" %}
-Depending on the game server not all ports will listen. However, a good rule is that the game and query ports will typically listen.&#x20;
+Depending on the game server not all ports will listen. However, a good rule is that the game and query ports will typically listen.
 {% endhint %}
 
 ```
@@ -143,7 +143,7 @@ RCON         28016  tcp       0
 App          28082  tcp       0
 ```
 
-Running the `ss` command will bring up any ports that are listening. If not, the game server has not started or not correctly binding to its allocated ports.&#x20;
+Running the `ss` command will bring up any ports that are listening. If not, the game server has not started or not correctly binding to its allocated ports.
 
 * Check that ports are not already in use by another application.
 * Check that you are trying to listen to an actual interface IP.

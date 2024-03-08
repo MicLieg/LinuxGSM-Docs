@@ -20,7 +20,7 @@ crontab -e
 
 ## Cronjob as a user or root
 
-It is possible to set up cronjobs as any user including root. The recommended way is to set up cronjobs using the game servers user account. However, If you run several game server installations on your server you may want to centrally manage cronjobs then using root. 
+It is possible to set up cronjobs as any user including root. The recommended way is to set up cronjobs using the game servers user account. However, If you run several game server installations on your server you may want to centrally manage cronjobs then using root.
 
 ### User cronjob
 
@@ -60,7 +60,7 @@ It is possible to set up cronjobs as any user including root. The recommended wa
 0 */2 * * *
 ```
 
-### Every two hours at 30 minutes past the hour 
+### Every two hours at 30 minutes past the hour
 
 ```bash
 30 */2 * * *
@@ -137,4 +137,3 @@ Below is a recommended basic example and will do the following:
 30 4 * * *  /home/username/gameserver force-update > /dev/null 2>&1
 0 0 * * 0 /home/username/gameserver update-lgsm > /dev/null 2>&1
 ```
-
